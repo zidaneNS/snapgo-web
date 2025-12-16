@@ -54,7 +54,7 @@ export default function ContactSection() {
       />
       <h1 className="text-3xl md:text-5xl font-bold font-playfair text-center">Ready to Capture Your <span className="text-yellow-400">Perfect Moments?</span></h1>
       <p className="text-xl md:text-lg font-semibold text-slate-500 text-center md:max-w-1/2">Mari diskusikan project Anda dengan tim profesional kami. Dapatkan konsultasi gratis dan penawaran terbaik untuk kebutuhan fotografi dan videografi Anda.</p>
-      <div className="flex flex-col items-center gap-y-8 ms:max-w-3/4 w-full">
+      <div className="flex flex-col items-center gap-y-8 md:max-w-3/4 w-full">
         <p className="text-center text-2xl font-bold font-playfair">Contact Information</p>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-y-6 md:gap-y-0 w-full">
           {contacts.map((contact, idx) => (
@@ -95,11 +95,11 @@ export default function ContactSection() {
             <p className="text-xl font-bold">Need Immediate Response?</p>
             <p className="text-slate-500">For urgent bookings or last-minute requests, contact us directly:</p>
             <div className="flex gap-x-4 items-center">
-              <Button className="py-2 px-4 flex-1">
+              <Button className="py-2 px-4 flex-1 justify-center">
                 <FiPhone className="size-4 md:size-6" />
                 <p className="text-xs md:text-base font-bold">Call Now</p>
               </Button>
-              <Button className="py-2 px-4 flex-1">
+              <Button className="py-2 px-4 flex-1 justify-center">
                 <MdOutlineEmail className="size-4 md:size-6" />
                 <p className="text-xs md:text-base font-bold">Quick Email</p>
               </Button>

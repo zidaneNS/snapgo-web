@@ -2,12 +2,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Button from "./Button";
 import { useEffect, useRef, useState } from "react";
 
-interface NavLink {
+export interface NavLink {
   label: string;
   href: string;
 }
 
-const navLinks: NavLink[] = [
+export const navLinks: NavLink[] = [
   {
     label: 'Home',
     href: '#home'

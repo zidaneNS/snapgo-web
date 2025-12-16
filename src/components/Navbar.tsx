@@ -67,7 +67,7 @@ export default function Navbar() {
   return (
     <>
       <div className={`fixed top-0 w-screen flex justify-between items-center p-4 md:px-12 md:py-4 ${!isTop ? 'bg-linear-to-b from-black/80 to-transparent backdrop-blur-md' : 'bg-transparent backdrop-blur-none'} z-50`}>
-        <h1 className={`text-xl md:text-2xl font-bold font-playfair text-white`}>SnapGo</h1>
+        <h1 className={`text-xl md:text-2xl font-bold font-playfair text-white`}>Snap<span className="text-yellow-400">Go</span></h1>
         <div className="hidden md:flex gap-x-6 items-center">
           {navLinks.map((navLink, idx) => (
             <a href={navLink.href} key={idx} className="hover:text-yellow-400 text-white font-bold text-lg duration-300">{navLink.label}</a>

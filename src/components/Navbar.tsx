@@ -81,7 +81,7 @@ export default function Navbar() {
         }} className="block md:hidden text-white size-6" />
 
       </div>
-      <div ref={navBarRef} className={`flex flex-col md:hidden fixed ${isOpen ? 'top-0' : '-top-full'} p-6 pt-12 gap-y-4 duration-300 bg-black/60 backdrop-blur-md w-full rounded-b-3xl`}>
+      <div ref={navBarRef} className={`flex flex-col z-30 md:hidden fixed ${isOpen ? 'top-0' : '-top-full'} p-6 pt-12 gap-y-4 duration-300 bg-black/60 backdrop-blur-md w-full rounded-b-3xl`}>
         {navLinks.map((navLink, idx) => (
           <a href={navLink.href} key={idx} onClick={() => setIsOpen(false)} className="hover:text-yellow-400 text-white font-bold duration-300 py-2 border-b border-white text-center">{navLink.label}</a>
         ))}

@@ -78,11 +78,11 @@ export default function AboutSection() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col items-center md:max-w-2/3 gap-y-8">
+      <div className="flex flex-col items-center md:max-w-2/3 gap-y-6 md:gap-y-8">
           <h2 className="font-playfair text-2xl font-bold">Our Values</h2>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-y-4 md:gap-8">
             {values.map((value, idx) => (
-              <div key={idx} className="flex flex-col gap-y-2 md:wgap-y-4 items-center">
+              <div key={idx} className="flex flex-col gap-y-2 md:gap-y-4 items-center">
                 <p className="text-lg font-bold">{value.title}</p>
                 <p className="text-slate-500 text-center">{value.desc}</p>
               </div>

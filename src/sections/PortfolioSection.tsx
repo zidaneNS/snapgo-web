@@ -63,7 +63,7 @@ export default function PortfolioSection() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
         {displayPortfolio.map((portfolio, idx) => (
-          <div key={idx} className=" group relative flex flex-col justify-between p-6 rounded-md cursor-pointer w-full overflow-hidden hover:bg-linear-to-t from-black/70 to-transparent duration-300 aspect-square">
+          <div key={idx} className=" group relative flex flex-col justify-between p-6 rounded-md cursor-pointer w-full overflow-hidden bg-linear-to-t from-black/70 hover:from-black/80 to-transparent duration-300 aspect-square">
             <img src={portfolio.img} alt="wedding" className="absolute left-0 top-0 group-hover:scale-105 -z-10 duration-300 h-full object-cover w-full" />
             <div className="flex justify-center items-center p-2 rounded-md bg-yellow-400 opacity-0 group-hover:opacity-100 w-fit duration-300">
               <IoEyeOutline />

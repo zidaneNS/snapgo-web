@@ -3,6 +3,7 @@ import AboutSection from "./sections/AboutSection";
 import Home from "./sections/Home";
 import PortfolioSection from "./sections/PortfolioSection";
 import ServiceSection from "./sections/ServiceSection";
+import TestimonialSection from "./sections/TestimonialSection";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <AboutSection />
       <ServiceSection />
       <PortfolioSection />
+      <TestimonialSection />
     </div>
   )
 }

@@ -72,7 +72,7 @@ export default function Navbar() {
           {navLinks.map((navLink, idx) => (
             <a href={navLink.href} key={idx} className="hover:text-yellow-400 text-white font-bold text-lg duration-300">{navLink.label}</a>
           ))}
-          <Button className="px-4 py-2">Book Now</Button>
+          <Button onClick={() => window.location.replace('#contact')} className="px-4 py-2">Book Now</Button>
         </div>
 
         <GiHamburgerMenu onClick={(e) => {
@@ -85,7 +85,10 @@ export default function Navbar() {
         {navLinks.map((navLink, idx) => (
           <a href={navLink.href} key={idx} onClick={() => setIsOpen(false)} className="hover:text-yellow-400 text-white font-bold duration-300 py-2 border-b border-white text-center">{navLink.label}</a>
         ))}
-        <Button onClick={() => window.location.replace('#contact')} className="px-4 py-2 justify-center">Book Now</Button>
+        <Button onClick={() => {
+          setIsOpen(false);
+          window.location.replace('#contact');
+        }} className="px-4 py-2 justify-center">Book Now</Button>
       </div>
     </>
   )

@@ -18,11 +18,11 @@ export default function Home() {
         </div>
         <p className="text-base md:text-2xl font-bold text-white">Mengabadikan momen spesial Anda dengan sentuhan profesional. Dari pernikahan romantis hingga konten bisnis yang memukau.</p>
         <div className="flex flex-col md:flex-row gap-8 items-center w-full md:w-fit">
-          <Button className='px-6 py-4 w-full md:w-fit justify-center'>
+          <Button onClick={() => window.location.replace('#contact')} className='px-6 py-4 w-full md:w-fit justify-center'>
             <p className="text-md font-bold">Book Your Session</p>
             <FaArrowRight className='size-4' />
           </Button>
-          <button className="bg-white/15 w-full md:w-fit justify-center text-white py-4 px-6 rounded-md cursor-pointer hover:scale-105 duration-300 hover:bg-white/20 hover:text-black border border-white gap-x-4 flex items-center shadow-md">
+          <button onClick={() => window.location.replace('#portfolio')} className="bg-white/15 w-full md:w-fit justify-center text-white py-4 px-6 rounded-md cursor-pointer hover:scale-105 duration-300 hover:bg-white/20 hover:text-black border border-white gap-x-4 flex items-center shadow-md">
             <BsCameraVideo className='size-4' />
             <p className="text-md font-bold">View Our Work</p>
           </button>

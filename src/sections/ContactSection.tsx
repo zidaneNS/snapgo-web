@@ -38,7 +38,7 @@ const contacts: Contact[] = [
     Icon: GrLocation,
     title: 'Location',
     content: [
-      'Jakarta, Indonesia',
+      'Gresik, Indonesia',
       'Available nationwide'
     ],
     addition: 'We serve across Indonesia'
@@ -60,40 +60,40 @@ export default function ContactSection() {
           {contacts.map((contact, idx) => (
             <div key={idx} className="flex gap-x-4 p-4 rounded-md shadow-md">
               <div className="flex justify-center items-center bg-yellow-100 text-yellow-400 p-2 rounded-md h-fit">
-                <contact.Icon className="size-8" />
+                <contact.Icon className="size-6 md:size-8" />
               </div>
               <div className="flex flex-col gap-y-2">
-                <p className="text-xl font-bold">{contact.title}</p>
+                <p className="text-lg md:text-xl font-bold">{contact.title}</p>
                 <div className="flex flex-col">
                   {contact.content.map((content, id) => (
-                    <p key={id} className="text-slate-500">{content}</p>
+                    <p key={id} className="text-slate-500 text-sm md:text-base">{content}</p>
                   ))}
                 </div>
-                <p className="text-yellow-400 font-semibold text-sm">{contact.addition}</p>
+                <p className="text-yellow-400 font-semibold text-xs md:text-sm">{contact.addition}</p>
               </div>
             </div>
           ))}
         </div>
         <div className="flex flex-col md:flex-row md:items-center gap-y-8 md:gap-y-0 md:gap-x-12 w-full">
           <div className="flex-1 flex flex-col gap-y-2 p-4 rounded-md shadow-md">
-            <p className="text-xl font-bold">Follow Us</p>
+            <p className="text-lg md:text-xl font-bold">Follow Us</p>
             <div className="flex gap-x-4 items-center">
               <div className="flex justify-center items-center bg-yellow-100 text-yellow-400 p-2 rounded-md h-fit">
-                <IoLogoInstagram className="size-6" />
+                <IoLogoInstagram className="size-4 md:size-6" />
               </div>
               <div className="flex justify-center items-center bg-yellow-100 text-yellow-400 p-2 rounded-md h-fit">
-                <LuFacebook className="size-6" />
+                <LuFacebook className="size-4 md:size-6" />
               </div>
               <div className="flex justify-center items-center bg-yellow-100 text-yellow-400 p-2 rounded-md h-fit">
-                <PiTiktokLogo className="size-6" />
+                <PiTiktokLogo className="size-4 md:size-6" />
               </div>
             </div>
             <p className="text-slate-500">Stay updated with our latest work and behind-the-scenes content</p>
           </div>
 
           <div className="flex-1 flex flex-col gap-y-2 p-4 rounded-md shadow-md bg-yellow-100 border border-yellow-400">
-            <p className="text-xl font-bold">Need Immediate Response?</p>
-            <p className="text-slate-500">For urgent bookings or last-minute requests, contact us directly:</p>
+            <p className="text-lg md:text-xl font-bold">Need Immediate Response?</p>
+            <p className="text-slate-500 text-sm md:text-base">For urgent bookings or last-minute requests, contact us directly:</p>
             <div className="flex gap-x-4 items-center">
               <Button className="py-2 px-4 flex-1 justify-center">
                 <FiPhone className="size-4 md:size-6" />

@@ -77,7 +77,7 @@ export default function Navbar() {
 
         <GiHamburgerMenu onClick={(e) => {
           e.stopPropagation();
-          setIsOpen(true)
+          setIsOpen(prev => !prev)
         }} className="block md:hidden text-white size-6" />
 
       </div>
@@ -85,7 +85,7 @@ export default function Navbar() {
         {navLinks.map((navLink, idx) => (
           <a href={navLink.href} key={idx} onClick={() => setIsOpen(false)} className="hover:text-yellow-400 text-white font-bold duration-300 py-2 border-b border-white text-center">{navLink.label}</a>
         ))}
-        <Button className="px-4 py-2 justify-center">Book Now</Button>
+        <Button onClick={() => window.location.replace('#contact')} className="px-4 py-2 justify-center">Book Now</Button>
       </div>
     </>
   )

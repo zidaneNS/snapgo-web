@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import AboutSection from "./sections/AboutSection";
 import Home from "./sections/Home";
+import ServiceSection from "./sections/ServiceSection";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Navbar />
       <Home />
       <AboutSection />
+      <ServiceSection />
     </div>
   )
 }
